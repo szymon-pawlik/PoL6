@@ -40,6 +40,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.buttonSum = new System.Windows.Forms.Button();
             this.wynik = new System.Windows.Forms.TextBox();
+            this.buttonMinus = new System.Windows.Forms.Button();
+            this.buttonMnoz = new System.Windows.Forms.Button();
+            this.buttonDevid = new System.Windows.Forms.Button();
+            this.buttonEq = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -176,11 +180,63 @@
             this.wynik.Size = new System.Drawing.Size(237, 20);
             this.wynik.TabIndex = 18;
             // 
+            // buttonMinus
+            // 
+            this.buttonMinus.Location = new System.Drawing.Point(332, 210);
+            this.buttonMinus.Name = "buttonMinus";
+            this.buttonMinus.Size = new System.Drawing.Size(75, 23);
+            this.buttonMinus.TabIndex = 19;
+            this.buttonMinus.Text = "-";
+            this.buttonMinus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonMinus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.buttonMinus.UseVisualStyleBackColor = true;
+            this.buttonMinus.Click += new System.EventHandler(this.buttonMinus_Click);
+            // 
+            // buttonMnoz
+            // 
+            this.buttonMnoz.Location = new System.Drawing.Point(332, 239);
+            this.buttonMnoz.Name = "buttonMnoz";
+            this.buttonMnoz.Size = new System.Drawing.Size(75, 23);
+            this.buttonMnoz.TabIndex = 20;
+            this.buttonMnoz.Text = "*";
+            this.buttonMnoz.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonMnoz.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.buttonMnoz.UseVisualStyleBackColor = true;
+            this.buttonMnoz.Click += new System.EventHandler(this.buttonMnoz_Click);
+            // 
+            // buttonDevid
+            // 
+            this.buttonDevid.Location = new System.Drawing.Point(332, 268);
+            this.buttonDevid.Name = "buttonDevid";
+            this.buttonDevid.Size = new System.Drawing.Size(75, 23);
+            this.buttonDevid.TabIndex = 21;
+            this.buttonDevid.Text = "/";
+            this.buttonDevid.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonDevid.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.buttonDevid.UseVisualStyleBackColor = true;
+            this.buttonDevid.Click += new System.EventHandler(this.buttonDevid_Click);
+            // 
+            // buttonEq
+            // 
+            this.buttonEq.Location = new System.Drawing.Point(455, 210);
+            this.buttonEq.Name = "buttonEq";
+            this.buttonEq.Size = new System.Drawing.Size(75, 23);
+            this.buttonEq.TabIndex = 22;
+            this.buttonEq.Text = "=";
+            this.buttonEq.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonEq.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.buttonEq.UseVisualStyleBackColor = true;
+            this.buttonEq.Click += new System.EventHandler(this.buttonEq_Click);
+            // 
             // calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonEq);
+            this.Controls.Add(this.buttonDevid);
+            this.Controls.Add(this.buttonMnoz);
+            this.Controls.Add(this.buttonMinus);
             this.Controls.Add(this.wynik);
             this.Controls.Add(this.buttonSum);
             this.Controls.Add(this.button2);
@@ -214,5 +270,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonSum;
         private System.Windows.Forms.TextBox wynik;
+        private System.Windows.Forms.Button buttonMinus;
+        private System.Windows.Forms.Button buttonMnoz;
+        private System.Windows.Forms.Button buttonDevid;
+        private System.Windows.Forms.Button buttonEq;
     }
 }
