@@ -8,9 +8,9 @@ namespace lab2
 {
     public class Biblioteka
     {
-        public List<Ksiazka> Ksiazki { get; set; }
-        public List<Czytelnik> Czytelnicy { get; set; }
-        public List<Wypozyczenie> Wypozyczenia { get; set; }
+        public List<Ksiazka> Ksiazki { get; set; } = new List<Ksiazka>();
+        public List<Czytelnik> Czytelnicy { get; set; } = new List<Czytelnik>();
+        public List<Wypozyczenie> Wypozyczenia { get; set; } = new List<Wypozyczenie>();
 
         public Biblioteka()
         {

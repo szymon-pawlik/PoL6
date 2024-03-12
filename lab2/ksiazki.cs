@@ -11,7 +11,9 @@ namespace lab2
         public string Tytul { get; set; }
         public string Autor { get; set; }
         public int RokWydania { get; set; }
-
+        public string Wydawnictwo { get; set; }
+        public int ISBN { get; set; }
+        public string Jezyk { get; set; }
         public Ksiazka(string tytul, string autor, int rokWydania)
         {
             Tytul = tytul;
@@ -40,17 +42,17 @@ namespace lab2
 
     public class Biografia : Ksiazka
     {
-        public string OpisanaOsobowosc { get; set; }
+        public string OpisanaOsoba { get; set; }
 
         public Biografia(string tytul, string autor, int rokWydania, string opisanaOsobowosc)
             : base(tytul, autor, rokWydania)
         {
-            OpisanaOsobowosc = opisanaOsobowosc;
+            OpisanaOsoba = opisanaOsobowosc;
         }
 
         public override void WyswietlInformacje()
         {
-            Console.WriteLine($"Biografia: {Tytul}, Autor: {Autor}, Rok Wydania: {RokWydania}, Opisana Osobowosc: {OpisanaOsobowosc}");
+            Console.WriteLine($"Biografia: {Tytul}, Autor: {Autor}, Rok Wydania: {RokWydania}, Opisana Osobowosc: {OpisanaOsoba}");
         }
     }
 
